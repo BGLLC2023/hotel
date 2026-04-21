@@ -5,7 +5,7 @@ select * from hotel_report limit 15;
 -- avg revenue by day
 select 
 	dow,
-	avg(Revenue) ''
+	avg(Revenue) as average_revenue
 from hotel_report 
 group by dow;
 
